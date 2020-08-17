@@ -1,8 +1,8 @@
 const wait = (sec) => {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log(`Wating for ${sec} seconds...`)
-      resolve
+      console.log(`Waited for ${sec} seconds...`)
+      resolve()
     }, sec)
   })
 }
